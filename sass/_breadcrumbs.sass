@@ -1,0 +1,19 @@
+.breadcrumbs
+	background-color: $Background
+	.container
+		background-color: $White
+	&-wrapper
+		padding: 8px 0px 0px 24px
+		.breadcrumbs-item
+			color: $Tamarillo
+			font-size: 11px
+			&:hover
+				text-decoration: none
+		.breadcrumbs-item~.slash
+			margin-left: 3px
+			color: $NevadaNew
+		.breadcrumbs-item.active
+			color: $NevadaNew
+			text-decoration: none
+			&~.slash
+				display: none

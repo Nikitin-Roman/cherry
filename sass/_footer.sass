@@ -1,0 +1,97 @@
+.footer-line
+	height: 8px
+	background-color: $Cadillac
+.footer
+	background-color: $BrightGray
+	padding-top: 40px
+	padding-bottom: 26px
+	.container
+		display: flex
+		justify-content: space-between
+		padding-left: 8px
+		padding-right: 8px
+		.footer-row
+			width: 270px
+			&:last-child
+				margin-right: 0px
+			.footer-title
+				color: $GrayChateau
+				font-family: "arial_mtregular"
+				font-size: 18px
+				position: relative
+				margin-bottom: 16px
+				&:before
+					content: ''
+					display: block
+					position: absolute
+					height: 1px
+					width: 270px
+					top: 26px
+					left: 0px
+					background-color: $SharkLine
+				&:after
+					content: ''
+					display: block
+					position: absolute
+					height: 1px
+					width: 270px
+					top: 27px
+					left: 0px
+					background-color: $Mako
+				span
+					color: $Cadillac
+			.footer-desc
+				color: $OsloGray
+				font-family: "arial_mtregular"
+				font-size: 12px
+				.hours
+					padding: 0
+					li
+						list-style: none
+						background: url(../images/hours.png) 0px 2px no-repeat
+						line-height: 1.95
+						padding-left: 30px
+				.social
+					display: flex
+					align-items: center
+					.soc-header
+						margin-right: 27px
+					.soc-icon
+						display: inline-block
+						background-color: $CopperRust
+						width: 24px
+						height: 24px
+						border-radius: 3px
+						position: relative
+						margin-right: 6px
+						i
+							color: $White
+							position: absolute
+						.fa-facebook
+							font-size: 20px
+							bottom: 0
+							right: 4px
+						.fa-twitter
+							font-size: 17px
+							top: 4px
+							left: 4px
+				.local
+					padding: 0
+					padding-left: 17px
+					li
+						line-height: 1.95
+						color: $CopperRust
+						span
+							color: $OsloGray
+				.callus
+					margin-top: -3px
+					color: #a5adb8
+					font-family: "arial_mtbold"
+				.location
+					line-height: 1.1
+					a
+						color: $Puce
+						&:hover
+							text-decoration: none
+
+		

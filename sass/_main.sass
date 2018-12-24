@@ -1,0 +1,256 @@
+.main
+	background-color: $Background
+	.container
+		display: flex
+		justify-content: flex-start
+		background-color: $White
+		.main-left
+			margin-left: 22px
+			&__form
+				margin-top: 26px
+				border: 1px solid $IronBorder
+				padding: 0px 15px 33px 14px
+				display: flex
+				flex-direction: column
+				background-color: $Concrete
+				.form-caption
+					color: $Shark
+					font-family: "arial_mtbold"
+					font-size: 18px
+					margin-bottom: 20px
+				input[type='text']
+					padding-left: 10px
+					width: 185px
+					height: 31px
+					box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.1)
+					border: 1px solid $RoseWhite
+					background-color: $IronForm
+					border-radius: 4px
+					margin-bottom: 16px
+					color: $Boulder
+					font-size: 14px
+					&:focus
+						outline: none
+				.select-wrapper
+					background-color: $IronForm
+					display: inline-block
+					position: relative
+					width: 185px
+					height: 31px
+					margin-bottom: 15px
+					&:after 
+						content: ''
+						position: absolute
+						border: 6px solid transparent
+						border-top: 7px solid $Manatee
+						top: 14px
+						right: 9px
+						z-index: 1
+					select
+						padding-left: 10px
+						color: $Boulder
+						font-family: 'arial_mtregular'
+						font-size: 14px
+						width: 185px
+						appearance: none
+						border: 1px solid $SilverChalice
+						background-color: transparent
+						border-radius: 4px
+						position: relative
+						cursor: pointer
+						z-index: 2
+						height: 31px
+						&:focus
+							outline: none
+						option
+							color: $Manatee
+							font-size: 14px
+				.form-btn
+					cursor: pointer
+					box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19)
+					border: 5px solid $White
+					background-color: $Tamarillo
+					background-image: linear-gradient(to top, $Tamarillo 0%, #b0252e 100%)
+					text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75)
+					color: $White
+					font-family: 'arial_mtregular'
+					font-size: 16px
+					padding: 8px 0px
+					&:active
+						outline: none
+					&:focus
+						outline: none
+			.post
+				margin-top: 27px
+				&-title
+					margin: 0
+					padding: 0
+					margin-bottom: 15px
+					color: $Shark
+					font-family: 'arial_mtbold'
+					font-size: 18px
+					font-weight: 400
+				&-desc
+					color: $ShuttleGrayPost
+					font-family: 'arial_mtregular'
+					font-size: 12px
+					font-weight: 400
+					line-height: 1.6
+					width: 210px
+					margin-bottom: 6px
+				&-details
+					color: $Tamarillo
+					font-family: "arial_mtregular"
+					font-size: 12px
+		.main-right
+			margin-left: 27px
+			.page-title
+				color: $GrayChateau
+				font-family: 'arial_mtbold'
+				font-size: 24px
+				margin-bottom: 10px
+				span
+					color: $Cadillac
+			.page-descr
+				display: inline
+				color: $ShuttleGrayPost
+				font-family: "arial_mtregular"
+				font-size: 14px
+				line-height: 1.45
+				a
+					color: $Tamarillo
+					&:hover
+						text-decoration: none
+			.cms-cont
+				margin-top: 18px
+				display: flex
+				justify-content: flex-start
+				.cms-item
+					margin-right: 14px
+					&:last-child
+						margin-right: 0px
+					&__title
+						color: $Shark
+						font-family: 'arial_mtbold'
+						font-size: 18px
+						margin-bottom: 11px
+					.img-cont
+						overflow: hidden
+						width: 196px
+						height: 142px
+						box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3)
+						border: 1px solid $White
+					img
+						background-color: $White
+						transition: all .3s ease-out
+						&:hover
+							transform: scale(1.2)
+			.page-lists
+				margin-top: 25px
+				h3
+					margin-bottom: 13px
+					color: $GrayChateau
+					font-family: "arial_mtbold"
+					font-size: 24px
+					span
+						color: $Cadillac
+				.list-item__cont
+					display: flex
+					justify-content: flex-start
+					.list-item
+						margin-right: 21px
+						&:last-child
+							margin-right: 0
+						&__title
+							color: $ShuttleGrayPost
+							font-family: "arial_mtbold"
+							font-size: 14px
+							display: inline-block
+							margin-right: 9px
+							margin-bottom: 2px
+						span
+							display: inline-block
+							font-size: 12px
+							background-color: #dedede
+							padding: 0px 2px
+							border-radius: 4px
+						.list
+							margin-top: 0px
+							padding-left: 23px
+							line-height: 1.7
+							li
+								color: $ShuttleGrayPost
+								font-family: "arial_mtregular"
+								font-size: 14px
+						.ulist
+							ul
+								padding-left: 17px
+								list-style-type: disc
+						.unstyled
+							list-style-type: none
+							padding-left: 0
+							ul
+								padding-left: 23px
+								list-style-type: disc
+						.olist
+							padding-left: 15px
+							color: red
+			.page-table
+				display: table
+				border-collapse: collapse
+				border: 2px solid $White
+				margin-bottom: 59px
+				.caption
+					display: table-caption
+					color: $GrayChateau
+					font-family: "arial_mtbold"
+					font-size: 24px
+					margin-bottom: 17px
+					margin-top: 10px
+					span
+						color: $Cadillac
+				.row
+					display: table-row
+				.cell
+					display: table-cell
+					border: 1px solid $IronBorder
+					height: 32px
+					line-height: 32px
+					padding-left: 14px
+					background-color: $Shark
+					color: $GrayChateauTb
+					font-family: "arial_mtregular"
+					font-size: 12px
+					a
+						font-family: "arial_mtregular"
+						font-size: 12px
+						color: $Puce
+						&:hover
+							text-decoration: none
+					&:first-child
+						width: 46px
+						font-size: 14px
+						padding-left: 17px
+					&:nth-child(2)
+						width: 126px
+					&:nth-child(3)
+						width: 206px
+					&:nth-child(4)
+						width: 187px
+					&:last-child
+						width: 125px
+				.cell-radius1
+					border-radius: 7px 0px 0px 0px
+				.cell-radius2
+					border-radius: 0px 7px 0px 0px
+				.cell-radius3
+					border-radius: 0px 0px 0px 7px
+				.cell-radius4
+					border-radius: 0px 0px 7px 0px
+				.hcell
+					background-color: $CopperRust
+					color: $White
+					font-family: "arial_mtbold"
+					padding: 0 !important
+					text-align: center
+					width: 100%
